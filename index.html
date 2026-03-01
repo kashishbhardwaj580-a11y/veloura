@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veloura — Bold luxury fragrances designed for the fearless generation. Own the night with our premium perfume collection." />
+  <title>VEL✦URA — Own The Night</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-inner">
+      <span class="loader-brand">VEL<span class="loader-star">✦</span>URA</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-glow"></div>
+
+  <!-- Canvas for particles -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#" class="nav-brand">VEL<span class="star">✦</span>URA</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#featured">Collection</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#newsletter">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">— LUXURY FRAGRANCE HOUSE —</p>
+      <h1 class="hero-title">VEL<span class="star">✦</span>URA</h1>
+      <p class="hero-tagline">Own The Night.</p>
+      <a href="#featured" class="btn btn-primary ripple-btn">
+        <span>Explore Collection</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Featured Perfumes -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">— THE COLLECTION —</span>
+        <h2>Signature Scents</h2>
+        <p class="section-sub">Crafted for those who dare to stand out.</p>
+      </div>
+      <div class="perfume-grid">
+        <!-- Card 1 -->
+        <article class="perfume-card reveal" data-delay="0">
+          <div class="card-glow"></div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&q=80" alt="Noir Absolute perfume bottle" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <h3>Noir Absolute</h3>
+            <p>Dark vetiver, smoky oud and midnight amber — unapologetically bold.</p>
+            <div class="card-footer">
+              <span class="price">$185</span>
+              <button class="btn btn-small ripple-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="perfume-card reveal" data-delay="150">
+          <div class="card-glow"></div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea081ac06b3?w=400&q=80" alt="Eclipse Velvet perfume bottle" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <h3>Eclipse Velvet</h3>
+            <p>Black orchid, warm vanilla and silver musk — seductive after-dark elegance.</p>
+            <div class="card-footer">
+              <span class="price">$210</span>
+              <button class="btn btn-small ripple-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="perfume-card reveal" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=400&q=80" alt="Silver Phantom perfume bottle" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <h3>Silver Phantom</h3>
+            <p>Metallic iris, crisp bergamot and white leather — razor-sharp sophistication.</p>
+            <div class="card-footer">
+              <span class="price">$195</span>
+              <button class="btn btn-small ripple-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="perfume-card reveal" data-delay="450">
+          <div class="card-glow"></div>
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&q=80" alt="Midnight Aura perfume bottle" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <h3>Midnight Aura</h3>
+            <p>Deep tonka, spiced saffron and obsidian woods — the signature of the night.</p>
+            <div class="card-footer">
+              <span class="price">$225</span>
+              <button class="btn btn-small ripple-btn">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container about-wrapper">
+      <div class="about-visual reveal">
+        <div class="about-image-frame">
+          <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=600&q=80" alt="Veloura brand lifestyle" loading="lazy" />
+          <div class="frame-accent"></div>
+        </div>
+      </div>
+      <div class="about-text reveal" data-delay="200">
+        <span class="section-label">— OUR STORY —</span>
+        <h2>Born From<br />The Shadows</h2>
+        <p>Veloura is a bold fragrance movement redefining modern luxury for the fearless generation. We don't follow trends — we ignite them. Every bottle is an anthem of defiance, crafted for those who own the room before they even enter it.</p>
+        <p>From the underground scene to the runway, Veloura bridges the gap between streetwear culture and haute couture, bottling the energy of midnight cities and moonlit ambition.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Fragrances</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="120">0</span><span class="stat-suffix">K</span>
+            <span class="stat-label">Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="35">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Countries</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">— THE VELOURA EDGE —</span>
+        <h2>Why Choose Us</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal" data-delay="0">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M24 10v14l8 8"/></svg>
+          </div>
+          <h3>Long-Lasting Essence</h3>
+          <p>12+ hours of bold sillage engineered with molecular precision for all-night confidence.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="150">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4l5.18 10.5L40 16.36l-8 7.8 1.89 11L24 30.27 14.11 35.16l1.89-11-8-7.8 10.82-1.86z"/></svg>
+          </div>
+          <h3>Premium Ingredients</h3>
+          <p>Rare accords sourced from Grasse, Oman and Madagascar — only the most exceptional notes.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="300">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20"/><path d="M24 14v10h8"/><circle cx="38" cy="10" r="6"/></svg>
+          </div>
+          <h3>Sustainable Luxury</h3>
+          <p>Eco-conscious packaging, cruelty-free formulas and carbon-neutral production chain.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="450">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 40s-4-4-4-10c0-8 8-12 16-24 8 12 16 16 16 24 0 6-4 10-4 10"/><circle cx="24" cy="30" r="4"/></svg>
+          </div>
+          <h3>Night Confidence</h3>
+          <p>Designed for after-dark moments — every note amplifies your presence under city lights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">— VOICES —</span>
+        <h2>What They Say</h2>
+      </div>
+      <div class="testimonial-carousel reveal">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Noir Absolute made me feel like I was walking through a movie scene. Compliments all night — people literally stopped me on the street."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <strong>Aria Chen</strong>
+                <span>New York, USA</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Eclipse Velvet is my signature scent now. It's that perfect blend of soft and dangerous. I've never felt more confident."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Marcus Rivera</strong>
+                <span>London, UK</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Veloura understands Gen Z luxury. The packaging, the vibe, the scent — everything is premium without being pretentious."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <strong>Sofia Nakamura</strong>
+                <span>Tokyo, Japan</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Silver Phantom lasts forever. I sprayed it at 8pm and was still getting compliments at brunch the next day. Insane longevity."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div>
+                <strong>Jamal Okafor</strong>
+                <span>Lagos, Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="newsletter-wrapper reveal">
+        <div class="newsletter-text">
+          <span class="section-label">— STAY IN THE DARK —</span>
+          <h2>Join the Inner Circle</h2>
+          <p>Exclusive drops, secret launches and members-only discounts. Be the first to know.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <div class="input-wrapper">
+            <input type="email" id="email-input" placeholder="Enter your email" required autocomplete="email" />
+            <button type="submit" class="btn btn-primary ripple-btn">
+              <span>Subscribe</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+            </button>
+          </div>
+          <p class="form-message" id="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-brand">VEL<span class="star">✦</span>URA</span>
+        <p>Bold luxury for the fearless.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="#featured">Collection</a>
+        <a href="#about">Our Story</a>
+        <a href="#why">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v14a4 4 0 11-4-4"/><path d="M18 6a4 4 0 01-4-4"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Veloura. All rights reserved. Designed with midnight energy.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
